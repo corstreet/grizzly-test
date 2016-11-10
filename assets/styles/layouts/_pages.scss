@@ -1,0 +1,142 @@
+.banner
+{
+	margin-top: 20px;
+	.container
+	{
+		display: flex;
+		justify-content:space-between;
+		padding:0;
+		.brand img
+		{
+			max-width: 100px;
+		}
+		.fa 
+		{
+			font-size:1.2rem;
+		}
+	}
+}
+/*li.menu-item
+{
+	&::before
+	{
+		font-family: FontAwesome;
+		content:'\f003';
+	}
+}*/
+
+/********************HERO***********************/
+#hero
+{
+	height:auto;
+	.header-text
+	{
+		padding: 200px 0 100px;
+	    width: 75%;
+	    font-size: 50px;
+	}
+}
+
+/********************EMAIL US********************/
+#section__email
+{
+	background:#2EC567;
+	height:42.5rem;
+	color:#FFF;
+	padding:150px 0;
+}
+.email--content
+{
+	width:70%;
+}
+.email--question
+{
+	margin-top:1.5rem;
+	text-transform:uppercase;
+	font-size:17px;
+}
+.email--form-instructions
+{
+	margin-top:2.7rem;
+	font-size:2rem;
+	line-height:42px;//need to create a sass rem function!!
+}
+.email__input {
+    width: 90%;
+    border: none;
+    border-bottom: 3px solid #fff;
+    background: transparent;
+    margin-top: 100px;
+    font-size: 2rem;
+    color:#FFFFFF;
+    &:focus
+    {
+    	outline:none;
+    }
+}
+.input-chevron
+{
+	position:relative;
+	left:-2rem;
+	font-size:2rem;
+}
+::-webkit-input-placeholder {
+   color: #FFF;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #FFF;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #FFF;  
+}
+
+:-ms-input-placeholder {  
+   color: #FFF;  
+}
+/********************INSTAGRAM************************/
+#instagram 
+{
+	height:30rem;
+}
+
+/********************FOOTER************************/
+.content-info
+{
+	height:auto;
+	background:#000000;
+	color:#fff;
+	padding:80px 0;
+}
+.container.footer-wrap
+{
+	display:flex;
+	align-items:center;	
+	justify-content:space-between;	
+}
+.footer--grizzly-logo
+{
+	width:2.2rem;
+	height:2.2rem;
+}
+.footer--logo-plus-text-wrap
+{
+	display:flex;
+
+}
+.footer--logo-text 
+{
+	display:inline-block;
+	margin-left:20px;
+	padding-top:5px;
+	text-transform:uppercase;
+}
+.footer--links-wrap
+{
+	display:flex;
+	.footer-social
+	{
+		padding:0 12px;
+	}
+}
