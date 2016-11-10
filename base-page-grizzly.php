@@ -4,7 +4,6 @@ use Roots\Sage\Setup;
 use Roots\Sage\Wrapper;
 
 ?>
-
 <!doctype html>
 <html <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
@@ -21,14 +20,15 @@ use Roots\Sage\Wrapper;
     <section id="hero">
       <div class="wrap container" role="document">
         <div class="content row">
-          <?php include Wrapper\template_path(); ?>
+          <h3 class="header-text"><?php the_field('header_text'); ?></h3>
+          <?php //include Wrapper\template_path(); ?>
         </div>
       </div>
     </section>
     <section id="section__email">
       <div class="wrap container">
         <div class="email--content">
-          <span class="underscore--long">___</span>
+          <div class="border-bottom"></div>
           <div class="email--question">Is Grizzly right for you?</div>
           <div class="email--form-instructions">If you'd like to be considered for a position here at Grizzly, please send us an email using the form below.</div>   
           <input type="text" class="email__input" placeholder="email@email.com">
