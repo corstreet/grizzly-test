@@ -28,6 +28,45 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+        $('.instarow').slick({
+          dots: false,
+          arrows: true,
+          prevArrow: '<i class="slick-prev fa fa-chevron-left"></i>',
+          nextArrow: '<i class="slick-next fa fa-chevron-right"></i>',
+          infinite: true,
+          speed: 300,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          variableWidth: true,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: false
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

@@ -1,0 +1,26 @@
+.banner
+{
+	margin-top: 20px;
+	.brand
+	{
+		background: url("http://grizzly.a0ghjpvu.netdna-cdn.com/wp-content/themes/grizzly-theme/dist/images/brand.svg") 0 0 no-repeat;
+		width: 8.13rem;
+	    display: inline-block;
+	    text-indent: -9999em;
+	    text-align: left;
+	    float: left;
+	    position: relative;
+	    top: .3rem;
+	}
+	.fa 
+	{
+		font-size:1.2rem;
+	}
+	
+}
+
+.nav-wrap
+{
+	display: flex;
+	justify-content:space-between;
+}
