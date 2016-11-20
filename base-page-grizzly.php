@@ -46,9 +46,9 @@ use Roots\Sage\Wrapper;
       <div class="container-fluid">
         <div class="row instarow">
           <?php
-              // use this instagram access token generator http://instagram.pixelunion.net/
+
               $access_token="330001622.54da896.6aa35b99a4334668a282df8727c31da5";
-              $client_id="da33cebf31134181bb76ca405156466b";
+              $client_id="";
               $photo_count=20;
               $tag="sunsetcliffs";
                    
@@ -66,24 +66,13 @@ use Roots\Sage\Wrapper;
 
                 $pic_text=$post['caption']['text'];
                 $pic_link=$post['link'];
-                // $pic_like_count=$post['likes']['count'];
-                // $pic_comment_count=$post['comments']['count'];
                 $pic_src=str_replace("http://", "https://", $post['images']['standard_resolution']['url']);
-                // $pic_created_time=date("F j, Y", $post['caption']['created_time']);
-                // $pic_created_time=date("F j, Y", strtotime($pic_created_time . " +1 days"));
+                
                  
                 echo "<div class='item_box'>";        
                     echo "<a href='{$pic_link}' target='_blank'>";
                         echo "<img class='img-responsive photo-thumb' src='{$pic_src}' alt='{$pic_text}'>";
                     echo "</a>";
-                    // echo "<p>";
-                    //     echo "<p>";
-                    //         echo "<div style='color:#888;'>";
-                    //             echo "<a href='{$pic_link}' target='_blank'>{$pic_created_time}</a>";
-                    //         echo "</div>";
-                    //     echo "</p>";
-                    //     echo "<p>{$pic_text}</p>";
-                    // echo "</p>";
                 echo "</div>";
               }
           ?>
