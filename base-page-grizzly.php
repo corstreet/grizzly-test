@@ -49,7 +49,7 @@ use Roots\Sage\Wrapper;
 
               $access_token="330001622.54da896.6aa35b99a4334668a282df8727c31da5";
               $client_id="";
-              $photo_count=20;
+              $photo_count=8;
               $tag="sunsetcliffs";
                    
               // $json_link="https://api.instagram.com/v1/users/self/media/recent/?";
